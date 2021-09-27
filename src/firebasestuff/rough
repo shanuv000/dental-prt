@@ -1,0 +1,54 @@
+{/* <div className="form-style-3">
+        <form>
+          <fieldset>
+            <legend>Personal</legend>
+            <label for="field1">
+              <span>
+                Title <span className="required">*</span>
+              </span>
+              <input
+                type="text"
+                onChange={(e) => setTitle(e.target.value)}
+                className="input-field"
+                name="field1"
+              />
+            </label>
+            <label for="field4">
+              <span>Year</span>
+              <select name="field4" className="select-field">
+                <option value="Books">1st Year</option>
+                <option value="Matrials">2nd Year</option>
+                <option value="Courses">3rd Year</option>
+              </select>
+            </label>
+            <label for="field4">
+              <span>Type Material</span>
+              <select name="field4" className="select-field">
+                <option value="Books">Books</option>
+                <option value="Matrials">Materials</option>
+                <option value="Courses">Courses</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Description</legend>
+            <label for="field6">
+              <span>
+                Description<span className="required">*</span>
+              </span>
+              <textarea
+                name="field6"
+                onChange={(e) => setDesc(e.target.value)}
+                className="textarea-field"
+              ></textarea>
+            </label>
+            <label>
+              <span> </span>
+              <button onClick={() => AddUg({ title, desc, id: uuidv4() })}>
+                Submit
+              </button>
+            </label>
+          </fieldset>
+        </form>
+      </div>
+      <div></div> */}

@@ -1,0 +1,11 @@
+.scaling:hover {
+  transform: scale(1.06, 1.4);
+  transition: ease-in 0.3s;
+}
+.scaling > a {
+  text-decoration: none;
+}
+.card__crdss:hover {
+  transform: scale(1.07);
+  transition: ease-in 0.3s;
+}

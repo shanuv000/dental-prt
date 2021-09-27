@@ -1,0 +1,32 @@
+.back__back2 {
+  background: #20002c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #cbb4d4,
+    #20002c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #cbb4d4,
+    #20002c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.back__back {
+  min-height: 84vh;
+}
+.row__row {
+  font-family: "Signika Negative", sans-serif;
+  color: lightgreen;
+
+  /* margin-top: 120px; */
+  padding: 50px;
+}
+.switchLogins {
+  color: #c3c5ec;
+  font-size: 20px;
+}
+.switchLogins:hover {
+  color: lightgreen;
+  font-size: 26px;
+  transition: ease-in 0.1s;
+}

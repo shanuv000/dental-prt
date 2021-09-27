@@ -1,0 +1,96 @@
+.__cards {
+  position: relative;
+  height: 50vw;
+  max-height: 490px;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.images {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+.title {
+  position: absolute;
+  top: 30%;
+  left: 5rem;
+  font-size: 2rem;
+  /* color: white; */
+  color: rgb(226, 226, 226);
+}
+.__cards:hover .title {
+  background-color: darkcyan;
+}
+
+.blurb {
+  position: absolute;
+  bottom: 4rem;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  opacity: 0;
+  z-index: 1;
+
+  transition: opacity 300ms ease-in;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 4.5rem;
+  height: 50%;
+  background-color: orange;
+  top: 0.55rem;
+  left: -5rem;
+
+  transform: scalex(0.2);
+  transition: transform 300ms ease-in;
+  transform-origin: left;
+}
+
+.blurb::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 4rem + 1rem);
+  left: 0;
+  top: -1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  z-index: -1;
+
+  transform: scaley(0);
+  transition: transform 300ms ease-in;
+  transform-origin: bottom;
+}
+
+.__cards:hover .title::before {
+  transform: scalex(1);
+}
+
+.__cards:hover .blurb::before {
+  transform: scaley(1);
+}
+
+.__cards:hover .blurb {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .__cards {
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: inherit;
+  }
+  .title {
+    color: purple;
+    text-align: center;
+  }
+  .__cards > .blurbs p {
+    text-decoration: none;
+  }
+}
